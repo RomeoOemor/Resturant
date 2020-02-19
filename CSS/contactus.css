@@ -1,0 +1,72 @@
+*
+{
+	margin: 0;
+	padding: 0;
+}
+
+body
+{
+	background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(../images/ContactUsBackground.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	
+}
+
+h1
+{
+	text-align: center;
+	color: darkorange;
+}
+
+h3
+{
+	color: darkorange;
+	text-align: center;
+}
+.contactInformation
+{
+	margin-top: 5%;
+	height: 10%;
+	width: 60%;
+}
+
+.jumbotronContactInformation
+{
+	background: transparent;
+	border: thin solid;
+	border-color: darkorange;
+	border-radius: 5px;
+}
+
+.jumbotronContactUs
+{
+	width:50%;
+	height: 50%;
+	margin-left: 25%;
+	background: transparent;
+	border: thin solid;
+	border-color: darkorange;
+	border-radius: 5px;
+}
+
+ul
+{
+	font: white;
+	font-size: 18px;
+	text-align: center;
+	list-style-type: none;
+	color: #fff;
+}
+
+.submitQuery
+{
+	margin-left: 40%;
+	margin-top: 5%;
+	background-color: black;
+}
+
+.form-control
+{
+	background: transparent;
+}
+

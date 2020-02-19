@@ -1,0 +1,196 @@
+*
+{
+	margin: 0;
+	padding: 0;
+}
+
+
+body
+{
+	background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(../images/resturant.jpg);
+	background-size: cover;
+	background-position: center;
+}
+
+h5
+{
+	color: darkorange;
+}
+
+.media-body
+{
+	color: #fff;
+}
+
+.mainContainer
+{
+	height: auto;
+	width: auto;
+	margin: 15px;
+	padding: 15px;
+}
+
+.navigation-bar
+{
+	width: auto;
+}
+
+.nav-item li a
+{
+	font: white;
+}
+
+.dropdown-menu
+{
+  background-color: darkorange;
+}
+
+.dropdown-item
+{
+	color: white;
+}
+
+.jumbotronContainer1
+{
+	background-image: linear-gradient(rgba(0,0,0.1,0.7),rgba(0,0,0,0.5)), url(../images/logo2.jpg);
+	border: 1px solid #000;
+	border-color: #fff;
+	color: #fff;
+	font-size: 20px;
+	font-weight: lighter;
+	font-family: Calibri;
+	padding: 20px;
+	border-radius: 10px;
+}
+
+h1
+{
+	color: darkorange;
+	font-family: "Tahoma, sans seriff";
+}
+
+
+
+.media
+{
+	margin-left: 1%;
+	
+}
+
+.mediaList1, .mediaList2, .mediaList3, .mediaList4
+{
+	border-bottom: thin solid;
+	border-color: #fff;
+}
+
+.image
+{
+	border: solid 3px;
+	border-color: darkorange;
+	border-radius: 5px;
+}
+
+.column1, .column2, .column3
+{
+	background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url(../images/gridBackground.png);
+}
+
+.contact, .location, .opentimes
+{
+	list-style-type: none;
+}
+
+.iconImage
+{
+	border: solid 2px;
+	border-color: darkorange;
+	border-radius: 3px;
+	list-style-type: none;
+}
+
+
+
+
+.gridSection
+{
+	margin-top: 2%;
+}
+
+.facebook, .instagram, .twitter
+{
+	list-style-type: none;
+	list-style-position: center;
+	margin-top: 4%;
+}
+
+
+
+.footer
+{
+	background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.9)), url(../images/footerbackground.jpg);
+	margin-top: 5%;
+	text-align: center;
+	color: #fff;
+	border: thin solid;
+	border-radius: 10px;
+	border-color: darkorange;
+
+}
+
+.viewcompetition
+{
+	background-color: black;
+	border-color: #fff;
+}
+
+.ingredientsHead, .methodHead, .nutritionalContentHead
+{
+	color: darkorange;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 18px;
+}
+
+.listIngredients, .listMethod, .listNutritionalContent
+{
+	color: #fff;
+	text-align: left;
+	text-transform: lowercase;
+	margin-left: 10px;
+}
+
+.order a
+{
+	text-decoration: none;
+	color: white;
+}
+
+.order a:hover
+{
+	color: darkorange;
+}
+
+table
+{
+	border-collapse: collapse;
+}
+
+th
+{
+	text-align: left;
+	background-color: #3a6070;
+	color: #fff;
+	padding: 4px 30px 4px 8px;
+}
+
+table td
+{
+	border: 1px solid #e3e3e3;
+	padding: 4px 8px;
+}
+
+table tr:nth-child(odd) td
+{
+	background-color: #e7edf0;
+	color: darkorange;
+}

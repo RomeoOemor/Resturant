@@ -1,0 +1,114 @@
+*
+{
+	margin: 0;
+	padding: 0;
+}
+
+body
+	{
+		background-image: linear-gradient(rgba(0,0,9,0.6), rgba(0,10,9,0.9)), url(../images/servicesBackground.jpg);
+		background-size: cover;
+		background-position: center;
+
+	}
+
+.navigation-bar
+{
+	width: auto;
+}
+
+.nav-item li a
+{
+	font: white;
+}
+
+.dropdown-menu
+{
+  background-color: darkorange;
+}
+
+.dropdown-item
+{
+	color: white;
+}
+
+	.mainContainerServices
+{
+	height: auto;
+	width: auto;
+}
+
+	.jumbotron
+	{
+		background: none;
+	}
+
+	.username
+	{
+		display: inline-block;
+	}
+
+	.jumbotronServices
+	{
+		margin-bottom: 10px;
+	}
+	.jumbotronForm
+	{
+		padding-top: 5px;
+	}
+
+.titles
+{
+	color: #fff;
+}
+
+.jumbotron
+{
+	color: darkorange;
+}
+
+.display-4
+{
+	position: center;
+}
+
+h1
+{
+	text-align: center;
+	margin-bottom: 2%;
+}
+
+h3
+{
+	margin-bottom: 5%;
+	margin-left: 8%;
+}
+
+.row
+{
+	margin-bottom: 5%;
+}
+
+.feedback
+{
+	border: thin solid;
+	padding: 2%;
+	width: 40%;
+	margin-top: 1%;
+	margin-left:30%;
+	border-radius: 5px;
+}
+
+.submit
+{
+	margin-top: 10%;
+	margin-left: 35%;
+	background-color: black;
+}
+
+.form-control
+{
+	border: solid thin;
+	border-color: white;
+	background: transparent;
+}
