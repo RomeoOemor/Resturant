@@ -17,6 +17,11 @@ h5
 	color: darkorange;
 }
 
+h1, h2, h3,h5
+{
+	font-family: "Antic";
+}
+
 .media-body
 {
 	color: #fff;
@@ -35,9 +40,8 @@ h5
 	width: auto;
 }
 
-.nav-item li a
-{
-	font: white;
+.navbar-light .navbar-nav .nav-link {
+    color: white;
 }
 
 .dropdown-menu
@@ -56,24 +60,42 @@ h5
 	border: 1px solid #000;
 	border-color: #fff;
 	color: #fff;
-	font-size: 20px;
+	font-size: 18px;
 	font-weight: lighter;
-	font-family: Calibri;
+	font-family: "Calibri";
 	padding: 20px;
 	border-radius: 10px;
+}
+
+h1.display-4
+{
+	font-size: 40px;
 }
 
 h1
 {
 	color: darkorange;
 	font-family: "Tahoma, sans seriff";
+
 }
 
+h2
+{
+	font-size: 25px;
+}
+
+.menuHeader
+{
+	color: #fff;
+	text-align: center;
+	font-size: 35px; 
+	font-family: "Arial";
+}
 
 
 .media
 {
-	margin-left: 1%;
+	margin-left: 5px;
 	
 }
 
@@ -81,6 +103,7 @@ h1
 {
 	border-bottom: thin solid;
 	border-color: #fff;
+	padding: 4px;
 }
 
 .image
@@ -93,6 +116,7 @@ h1
 .column1, .column2, .column3
 {
 	background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url(../images/gridBackground.png);
+	color: #fff;
 }
 
 .contact, .location, .opentimes
@@ -108,12 +132,19 @@ h1
 	list-style-type: none;
 }
 
+.navigation-bar
+{
+	color: darkorange;
+}
+
 
 .facebook, .instagram, .twitter
 {
+	list-style-position: center;
 	list-style-type: none;
 	list-style-position: center;
-	margin-top: 1.5%;
+	margin-top: 10%;
+	margin-bottom: 10%; 
 }
 
 
@@ -126,13 +157,14 @@ h1
 	border: thin solid;
 	border-radius: 10px;
 	border-color: darkorange;
-
+	
 }
 
 .media li a
 {
 	text-decoration: none;
 	list-style-type: none;
+	color: #fff;
 }
 
 .viewcompetition
@@ -141,6 +173,15 @@ h1
 	border-color: #fff;
 }
 
+.nav-item li a
+{
+	color: white;
+}
+
+.listContent
+{
+	font-size: 18px;
+}
 
 
 
