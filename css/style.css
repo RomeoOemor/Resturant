@@ -1,0 +1,494 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html, body
+{
+    scroll-behavior: smooth;
+}
+
+body
+{
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.header
+{
+    background: rgba(0,0,0,0.6);
+    width: 70%;
+    padding: 2px;
+}
+
+/* Navigation bar css */
+
+.navbar
+{
+    padding: 20px 10px 20px 10px;
+    background: rgba(0,0,0,0.7);
+}
+
+.logo
+{
+    transition: 0.6s;
+}
+
+
+.logo:hover
+{
+    width: 55px;
+    height: 60px;
+    transition: 0.6s;
+}
+
+a
+{
+    color: #fff;
+    margin-left: 5px;
+}
+
+li a:hover
+{
+    background: lightgray;
+    color: #000;
+    transition: 0.6s;
+}
+
+.fa-bars
+{
+    color: #fff;
+}
+
+/* Navigation Bar css ends here */
+
+#home
+{
+    background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.3)), url("../images/kitchen.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 75vh;
+    padding-top: 5%;
+}
+
+#about
+{
+    height: 100%;
+    margin-bottom: 5px;
+    padding-top: 10%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-bottom: 10%;
+}
+
+.about-title
+{
+    margin: 30px 0 20px 4%;
+}
+
+#menu
+{
+    background: url("../images/menu_bg.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    padding: 5% 50px 50px 50px;
+    color: #fff;
+}
+
+.menuHeading
+{
+    color: #000;
+}
+
+#pizza-recipe
+{
+    border-bottom: 3px solid;
+    border-color: green;
+}
+
+.menu_images
+{
+    width: 100%;
+}
+
+.btnBuy
+{
+    background: rgba(0,0,0,0.7);
+    color: #fff;
+    border-radius: 5px;
+    padding: 5px;
+    width: 100%;
+    height: 100%;
+    border: none;
+    transition: 0.5s;
+    font-weight: lighter;
+    border: solid 2px;
+    border-color: green;
+}
+
+.btnBuy:hover
+{
+    color: #fff;
+    background: green;
+    padding: 5px;
+    border-radius: 5px;
+    transition: 0.5s;
+    font-weight: bold;
+}
+
+.item-column
+{
+    margin-top: 40px;
+    margin-bottom: 40px;
+    border: solid thin;
+    padding: 20px;
+    border-radius: 5px;
+    margin-right: 10px;
+    background: rgba(0,0,0,0.5);
+}
+
+/* Carosel css starts here */
+.carouselHead
+{
+    background: rgba(0,0,0,0.5);
+}
+
+.subtitle
+{
+    background: rgba(0,0,0,0.5);
+}
+
+.carousel-control-prev
+{
+    background: rgba(0,0,0,0.5);
+}
+
+.carousel-control-next
+{
+    background: rgba(0,0,0,0.5);
+}
+/* Carosel css ends here */
+
+.jumbotron-fluid
+{
+    background: rgba(0,0,0,0.8);
+    color: #fff;
+    margin-left: 25%;
+    width: 50%;
+    height: 50%;
+    border: thick solid;
+}
+
+/* Scroll indicator or Progrss bar css */
+
+
+.progress-container {
+  width: 100%;
+  height: 8px;
+  background: #ccc;
+}
+
+.progress-bar {
+  height: 8px;
+  background: #4caf50;
+  width: 0%;
+}
+
+.content {
+  padding: 100px 0;
+  margin: 50px auto 0 auto;
+  width: 80%;
+}
+/* Scroll indicator or Progrss bar css ends here*/
+
+
+/* Recipe Section css starts here */
+
+#recipe
+{
+    padding-top: 8%;
+}
+
+.pizza-recipe-images
+{
+    width: 100%;
+    height: 150px;
+    margin-top: 5%;
+    margin-bottom: 10px;
+}
+
+
+.recipe-title
+{
+    margin: 30px 0 20px 4%;
+    color: #000;
+}
+
+.ingredients
+{
+    margin-left: 30px;
+}
+
+#drinks
+{
+    padding-top: 10%;
+}
+
+.scroller
+{
+    overflow-y: scroll;
+    height: 300px;
+    margin-bottom: 40px;
+}
+
+/* Recipe Section css ends here */
+
+/* --------- Galleria CSS starts here ------------ */
+
+#galleria
+{
+    padding-top: 10%;
+    height: 100vh;
+}
+
+.galleria
+{
+    height: 350px;
+    width: 80%;
+    padding-top: 0;
+}
+
+/* Galleria CSS ends here */
+
+
+
+/* Services css starts here */
+#services
+{
+    background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.5)), url("../images/service.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    padding-top: 150px;
+    padding-bottom: 200px;
+    color: #fff;
+}
+
+#services img
+{
+    width: 250px;
+    height: 250px;
+    border: 5px solid;
+    border-radius: 2px;
+    border-color: #ffff;  
+    margin-bottom: 20px;
+}
+
+
+#services img:hover
+{
+    transition: 1s;
+    filter: grayscale(100%);
+    transform: scale(1.1);
+}
+
+
+.services_header
+{
+    margin-bottom: 0px;
+}
+
+
+
+/* Sercices css ends here */
+
+#contact
+{
+    background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.7)), url("../images/phone_booth.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 150vh;
+    width: 100%;
+    margin-top: 0;
+    padding: 15%;
+}
+
+.btnSend
+{
+    background: rgba(0,0,0,0.7);
+    color: #fff;
+    border-radius: 5px;
+    padding: 5px;
+    width: 100%;
+    height: 100%;
+    border: none;
+    transition: 0.5s;
+    font-weight: lighter;
+    border: solid 2px;
+    width: 50px;
+    border-color: green;
+}
+
+.btnSend:hover
+{
+    color: #fff;
+    background: green;
+    padding: 5px;
+    border-radius: 5px;
+    transition: 0.5s;
+    font-weight: bold;
+}
+
+/* Contact Section CSS starts here */
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 6px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  height: 30px;
+  margin-bottom: 5px;
+  resize: vertical;
+  background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.8));
+  color: #fff;
+}
+
+textarea
+{
+    height: 150px;
+    color: #fff;
+}
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.contactForm {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+  margin-top: 5px;
+  background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.8));
+  border: 2px solid;
+  border-color: #fff;
+  height: 380px;
+  width: 100%;
+}
+
+option
+{
+    background: rgba(0,0,0,0.6);
+    color: #fff;
+}
+
+iframe
+{
+    height: 380px;
+    width: 100%;
+    border: 2px solid;
+    border-color: #fff;
+    margin-top: 5px;
+    border: 2px solid;
+    border-color: #fff;
+}
+/* Contact Section CSS ends here */
+
+/* Footer css starts here */
+
+footer
+{
+    background-color:#101010;
+    color:#9d9d9d;
+    font-size:14px;
+    font-weight:bold;
+    padding:10px; 
+    width: 100%;
+    height: 70px;  
+    margin-bottom: 0;
+    bottom: 0;
+    position: fixed;
+}
+
+/* Footer css ends here */
+
+/* Scroll down button css starts here */
+.scrollDown
+{
+    width: 30px;
+    height: 50px;
+    background: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.8));
+    border: 1px solid;
+    border-color: #fff;
+    border-radius: 10px;
+    margin-top: 5%;
+    color: #fff;
+    transition: 0.5s;
+}
+
+.scrollDown:hover
+{
+    color: #000;
+    background: #fff;
+    border: 3px solid;
+    box-shadow: green 1px 1px 1px 1px;
+    border-color: #000;
+    transform: scale(1.5);
+    transition: 1s;
+}
+
+.scrollTxt
+{
+    color: #fff;
+}
+/* Scroll down button css ends here */
+
+
+/* Social Sticky Nav css ends here */
+
+/* Scroll to top button css starts here */
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 100px;
+  right: 10px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: rgba(0,0,0,0.4);
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 5px;
+}
+
+#myBtn:hover {
+  background-color: #555;
+}
+/* Scroll to top button css ends here  */
+/* media queries */
+
+/* media queries */
