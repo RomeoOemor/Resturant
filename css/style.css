@@ -110,15 +110,22 @@ li a:hover
     color: #000;
 }
 
-#pizza-recipe
+
+.item-column::-webkit-scrollbar
 {
-    border-bottom: 3px solid;
-    border-color: green;
+    display: none;
 }
 
 .menu_images
 {
-    width: 100%;
+    width: 100px;
+    height: 200px;
+}
+
+#pizza-recipe
+{
+    border-bottom: 3px solid;
+    border-color: green;
 }
 
 .btnBuy
@@ -148,13 +155,15 @@ li a:hover
 
 .item-column
 {
+    display: inline-block;
     margin-top: 40px;
     margin-bottom: 40px;
-    border: solid thin;
+    border: 2px solid;
     padding: 20px;
     border-radius: 5px;
     margin-right: 10px;
     background: rgba(0,0,0,0.5);
+    height: 300px;
 }
 
 /* Carosel css starts here */
@@ -183,7 +192,6 @@ li a:hover
 {
     background: rgba(0,0,0,0.8);
     color: #fff;
-    margin-left: 25%;
     width: 50%;
     height: 50%;
     border: thick solid;
@@ -266,6 +274,7 @@ li a:hover
     height: 350px;
     width: 80%;
     padding-top: 0;
+    align-content: center;
 }
 
 /* Galleria CSS ends here */
@@ -281,15 +290,15 @@ li a:hover
     background-size: cover;
     width: 100%;
     height: 100%;
-    padding-top: 150px;
+    padding-top: 90px;
     padding-bottom: 200px;
     color: #fff;
 }
 
 #services img
 {
-    width: 250px;
-    height: 250px;
+    width: 105%;
+    height: 200px;
     border: 5px solid;
     border-radius: 2px;
     border-color: #ffff;  
@@ -297,7 +306,7 @@ li a:hover
 }
 
 
-#services img:hover
+.service_image:hover
 {
     transition: 1s;
     filter: grayscale(100%);
@@ -313,17 +322,21 @@ li a:hover
 
 
 /* Sercices css ends here */
+.contact_header
+{
+    color: #fff;
+    margin-top: 0;
+}
 
 #contact
 {
-    background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.7)), url("../images/phone_booth.jpg");
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.9)), url("../images/about_bg.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     height: 150vh;
     width: 100%;
-    margin-top: 0;
-    padding: 15%;
+    padding-top: 10%;
 }
 
 .btnSend
@@ -394,7 +407,7 @@ input[type=submit]:hover {
   background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.8));
   border: 2px solid;
   border-color: #fff;
-  height: 380px;
+  height: auto;
   width: 100%;
 }
 
@@ -432,6 +445,20 @@ footer
     position: fixed;
 }
 
+.engineer
+{
+    color: blue;
+    font-style: Tahoma;
+    font-size: 15px;
+}
+
+.engineer:hover
+{
+    background-color: #fff;
+    transition: .5s;
+    border-radius: 5px;
+}
+
 /* Footer css ends here */
 
 /* Scroll down button css starts here */
@@ -443,7 +470,7 @@ footer
     border: 1px solid;
     border-color: #fff;
     border-radius: 10px;
-    margin-top: 5%;
+    margin-top: 5px;
     color: #fff;
     transition: 0.5s;
 }
@@ -489,6 +516,439 @@ footer
   background-color: #555;
 }
 /* Scroll to top button css ends here  */
+
+
 /* media queries */
+
+/* ----------- Tablet Mode starts here ------------- */
+/* home section starts here */
+
+@media (max-width: 768px)
+{
+    #home
+    {
+        padding-top: 70px;
+        height: 70vh;
+    }
+
+    .display-4
+    {
+        font-size: 30px;
+    }
+
+    .lead
+    {
+        font-size: 16px;
+    }
+
+    .banner
+    {   
+        padding-top: 35px;
+        height: 150px;
+    }
+
+    .scrollDown
+    {
+        margin-top: 10px;
+    }
+
+
+}
+/* home section ends here */
+
+
+/* menu section starts here */
+
+@media (min-width: 768px)
+{
+    #menu
+    {
+        padding-top: 110px;
+    }
+
+    .menu_images
+    {
+        height: 100px;
+        width: 100%;
+    }
+
+    .food_title
+    {
+        font-size: 14px;
+    }
+
+    .food_price
+    {
+        font-size: 11px;
+    }
+
+    #drinks
+    {
+        padding-top: 18%;
+    }
+
+    .item-column
+    {
+        margin-top: 10px;
+        margin-bottom: 50px;
+        height: auto;
+    }
+
+    .menuHeading
+    {
+        font-size: 30px;
+    }
+
+    .header
+    {
+        font-size: 20px;
+    }
+
+    .food_title
+    {
+        font-size: 11px;
+    }
+
+    
+}
+/* menu section ends here */
+
+/* recipe section starts here */
+@media (min-width: 768px)
+{
+    #recipe
+    {
+        padding-top: 70px;
+    }
+}
+/* recipe seciton ends here */
+
+/* galleria section starts here */
+@media (min-width:  768px)
+{
+    #galleria
+    {
+        padding-top: 14%;
+    }
+
+    .galleria
+    {
+        height: 280px;
+        width: 80%;
+    }
+}
+/* galleria section ends here */
+
+/* services seection starts here */
+@media (min-width: 768px)
+{
+    #services
+    {
+        padding: 15%;
+    }
+
+}
+/* services section ends here */
+
+/* contact section starts here */
+@media (min-width: 768px)
+{
+    .contact_header
+    {
+        margin-bottom: 20px;
+    }
+
+    #contact
+    {
+        padding-top: 15%;
+        height: 100vh;
+        padding-bottom: 100px;
+    }
+
+    textarea
+    {
+        height: 60px;
+        color: #fff;
+        
+    }
+
+    .contactForm
+    {
+        height: auto;
+        padding-bottom: 10px;
+    }
+
+    .scrollDownBtn
+    {
+        display: none;
+    }
+
+    iframe
+    {
+        height: 280px;
+    }
+   
+}
+/* contact section ends here */
+
+/* ----------- Tablet Mode ends here --------------- */
+
+
+/* ********************** Mobile Mode ************************* */
+/* home section starts here section */
+
+@media (max-width: 425px)
+{
+    #home
+    {
+        height: 68vh;
+    }
+
+    .banner
+    {
+        height: 150px;
+        width: 85%;
+    }
+
+    .display-4
+    {
+        font-size: 20px;
+    }
+
+    .lead
+    {
+        font-size: 16px;
+    }
+}
+
+/* home section ends here */
+
+/* about section stars here */
+@media (max-width: 425px)
+{
+    #about
+    {
+        font-size: 15px;
+        padding-top: 18%;
+    }
+}
+/* about section ends here */
+
+/* menu section starts here */
+@media (max-width: 425px)
+{
+    #menu
+    {
+        padding-top: 25%;
+    }
+
+    .item-column
+    {
+        height: auto;
+        margin-top: 0;
+        margin-bottom: 30px;
+        width: 250px;
+        margin-left: 10%;
+    }
+
+    .menu_images
+    {
+        width: 150px;
+        height: 100px;
+    }
+
+    .food_title, .food_price
+    {
+        font-size: 11px;
+    }
+
+    .menuHeading
+    {
+        font-size: 22px;
+    }
+
+    .header
+    {
+        font-size: 18px;
+    }
+
+    #drinks
+    {
+        padding-top: 45%;
+    }
+
+    /* menu section ends here */
+
+    /* recipe section starts here */
+    #recipe
+    {
+        padding-top: 20%;
+    }
+    /* recipe section ends here */
+
+
+    /* galleria section starts here */
+    #galleria
+    {
+        padding-top: 26%;
+        height: 85vh;
+    }
+
+    .galleria
+    {
+        width: 95%;
+        height: 200px;
+    }
+    /* galleria section ends here */
+
+    /* services section starts here */
+    #services
+    {
+        padding-top: 30%;
+        height: 200vh;
+    }
+
+    #services img
+    {
+        width: 300px;
+    }
+
+    .text
+    {
+        margin-bottom: 50px;
+    }
+    
+    /* services section ends here */
+}
+
+
+
+
+@media (max-width: 425px)
+{
+
+    #contact
+    {
+        padding-top: 32%;
+        height: 180vh;
+    }
+
+    .contact_header
+    {
+        font-size: 30px;
+    }
+
+    textarea
+    {
+        height: 50px;
+    }
+
+/* footer section starts here */
+    .footer
+    {
+        height: 90px;
+    }
+
+    .footerContainer
+    {
+        padding-bottom: 20px;
+    }
+/* footer section ends here */
+
+
+
+    /* scroll down button starts here */
+    .scrollDownBtn
+    {
+        width: 40px;
+        height: 40px;
+        margin-top: 0;
+        float: right;
+        background: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.8));
+        border: 1px solid;
+        border-color: #fff;
+        border-radius: 10px;
+        color: #fff;
+        transition: 0.5s;
+    }
+
+    .veiwMap
+    {
+        font-size: 12px;
+    }
+
+    /* sccroll down button ends here */
+}
+
+
+/* medium device Mobile */
+
+/* medium devices Mobile */
+
+
+/* small devices Mobile */
+@media (max-width: 320px)
+{
+    #about
+    {
+        padding-top: 25%;
+    }
+
+    #menu
+    {
+        padding-top: 35%;
+    }
+
+    #drinks
+    {
+        padding-top: 60%;
+    }
+
+    #recipe
+    {
+        padding-top: 20%;
+    }
+
+    #galleria
+    {
+        padding-top: 35%;
+    }
+
+    #services
+    {
+        padding-top: 40%;
+        height: 180vh;
+    }
+
+    #services img
+    {
+        width: 200px;
+        height: 150px;
+    }
+
+    iframe
+    {
+        height: 250px;
+    }
+
+    .column1
+    {
+        margin-bottom: 35%;
+    }
+
+    textarea
+    {
+        height: 80px;
+    }
+
+
+    
+}
+/* small devices Mobile */
+
+
+
+/* ********************** Mobile Mode ************************* */
+
 
 /* media queries */
