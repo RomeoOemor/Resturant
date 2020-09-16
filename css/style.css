@@ -5,7 +5,7 @@
     box-sizing: border-box;
 }
 
-html, body
+html
 {
     scroll-behavior: smooth;
 }
@@ -15,7 +15,8 @@ body
     height: 100%;
     width: 100%;
     margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif; 
+    
 }
 
 .header
@@ -31,6 +32,7 @@ body
 {
     padding: 20px 10px 20px 10px;
     background: rgba(0,0,0,0.7);
+    z-index: 1;
 }
 
 .logo
@@ -44,6 +46,17 @@ body
     width: 55px;
     height: 60px;
     transition: 0.6s;
+}
+
+.dropdown-menu
+{
+    background-color: rgba(0,0,0,0.5);
+}
+
+.dropdown-item
+{
+    border-bottom: solid thin;
+    color: #fff;
 }
 
 a
@@ -65,6 +78,19 @@ li a:hover
 }
 
 /* Navigation Bar css ends here */
+
+.maincontainer
+{
+    height: 100%;
+    width: 100%;
+    
+    
+}
+
+section
+{
+    scroll-snap-align: center;
+}
 
 #home
 {
@@ -509,6 +535,8 @@ footer
   color: white;
   cursor: pointer;
   padding: 15px;
+  border: solid thin;
+  border-color: #fff;
   border-radius: 5px;
 }
 
@@ -949,6 +977,5 @@ footer
 
 
 /* ********************** Mobile Mode ************************* */
-
 
 /* media queries */
